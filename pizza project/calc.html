@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="whole_page">
+        <div class="logobar">
+            <img src="pizzalogo.png" alt="" class="logopic">
+        </div>
+        <div class="order_box">
+            <div class="burger divitem">
+                <img src="burger.jpg" alt="">
+                <h4>Burger</h4>
+                <button onclick="addcart(event)">ADD</button>
+            </div>
+            <div class="french-fries divitem">
+                <img src="frenchfries.jpg" alt="">
+                <h4>French Fries</h4>
+                <button onclick="addcart(event)">ADD</button>
+            </div>
+            <div class="divitem margarita-pizza">
+                <img src="margaritapizza.jpg" alt="">
+                <h4>Margarita Pizza</h4>
+                <button onclick="addcart(event)">ADD</button></div>
+            <div class="divitem tomato-pizza">
+                <img src="tomatopizza.jpg" alt="">
+                <h4>Tomato Pizza</h4>
+                <button onclick="addcart(event)">ADD</button>
+            </div>
+            <div class="divitem coca-cola">
+                <img src="cocacola.jpg" alt="">
+                <h4>Coca cola</h4>
+                <button onclick="addcart(event)">ADD</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="billing head1"></div>
+            <div class="billing head2"></div>
+            <div class="billing head3"></div>
+            <div class="billing head4"></div>
+            <div class="billing head5"></div>
+            <div class="billing head6"></div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

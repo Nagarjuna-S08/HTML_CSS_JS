@@ -1,0 +1,80 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.whole_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 350px;
+    height:250px;
+}
+.logopic{
+    width:200px;
+    height:160px;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    bottom:10px;
+}
+.logobar{
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    height:80px;
+    display: flex;
+    align-items: center;
+    border-radius:10px;
+}
+.order_box{
+    width:100%;
+    display:grid;
+    grid-template-areas: "a b f";
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 60px;
+}
+.divitem{
+    height:330px;
+    width: 350px;
+    margin-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    border-radius:30px;
+    overflow: hidden;
+}
+h4{
+    padding-left: 20px;
+}
+button{
+    width:80px;
+    height:40px;
+    position: relative;
+    top:-45px;
+    left:260px;
+    background-position:center;
+    background-size:cover;
+
+}
+.result{
+    font-size: 25px;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction:column;
+    background:linear-gradient(120deg,rgb(170, 170, 170),white);
+    padding-right:30px;
+    border-radius: 30px;
+}
+.billing{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}

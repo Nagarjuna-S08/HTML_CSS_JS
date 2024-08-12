@@ -1,0 +1,99 @@
+html{
+    background: linear-gradient(260deg,rgb(175, 137, 175),rgb(124, 124, 250));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background: url("/login/pic.jpg");
+}
+.whole_site{
+    width:400px;
+    height: 600px;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 20px;
+    overflow: hidden;
+    border-bottom:100px;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    border: 1px solid darkgreen;
+    max-width:100%;
+    backdrop-filter:blur(10000px) ;
+    background: linear-gradient(100deg,rgb(206, 243, 255),rgb(126, 126, 255)
+    );
+    border-radius: 10px;
+    border-top-left-radius:50px;
+    border-top-right-radius: 50px;
+    background: url("/login/pic3.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index:-3;
+    
+}
+.login{
+    border: 1px solid green;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background:linear-gradient(110deg,lightgreen,pink);
+    bottom: 35px;
+    border-radius:20px;
+    border-top-right-radius:35px;
+    border-top-left-radius: 35px;
+    z-index:9;
+    background: url("/login/pic6.jpg");
+    background-position:bottom ;
+    background-size: cover;
+    transition-duration: 2s;
+}
+
+
+h2{
+    font-size:40px;
+    margin-bottom:30px;
+    cursor: pointer;
+    color: white;
+}
+input{
+    width:290px;
+    height:50px;
+    font-size: large;
+    outline: none;
+    border:0.1px solid black;
+    margin-bottom:30px;
+    border-radius:13px;
+    padding-left: 18px;
+}
+label{
+    font-size:larger;
+    position: relative;
+    right:100px;
+}
+button{
+    width:120px;
+    height:50px;
+    margin-bottom:40px;
+    border: 1px solid ;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#loginh2{
+    margin-bottom: 80px;
+    cursor: pointer;
+    color: black;
+}
+.login2{
+    bottom:415px;
+    transition:2s;
+}

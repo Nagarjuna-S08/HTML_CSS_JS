@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper siscors</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="heading">
+            <h2>ROCK PAPER SICSORS</h2>
+            <h4>Let's give a try</h4>
+        </div>
+        <div class="choice">
+            <button onclick="
+                
+                let comp_move=Math.random();
+                console.log(comp_move);
+                if(comp_move<0.333){
+                    let comp='siscors';
+                    document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                    document.getElementById('result').innerHTML=`you won !`;
+                }
+                else if((comp_move>=0.333 && comp_move<0.666)){
+                    let comp='Rock';
+                    document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                    document.getElementById('result').innerHTML=`Game Tie !`;
+                }
+                else if((comp_move>=0.666 && comp_move<=1)){
+                    let comp='Paper';
+                    document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                    document.getElementById('result').innerHTML=`You lose !`; 
+                }
+                " id="rock"><img src="rock2.png" alt=""></button>
+
+
+
+
+
+            <button onclick="
+             player_move=document.getElementById('rock').innerHTML;
+             com_move=Math.random();
+            console.log(com_move);
+            if(com_move<0.333){
+                let comp='Rock';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`you won !`;
+            }
+            else if((com_move>=0.333 && com_move<0.666)){
+                let comp='Paper';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`Game Tie !`;
+            }
+            else if((com_move>=0.666 && com_move<=1)){
+                let comp='Scissprs';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`You lose !`; 
+            }
+            "><img src="paper.jpg" alt=""></button>
+
+
+
+
+
+            <button  onclick="
+             player_move=document.getElementById('rock').innerHTML;
+             com_move=Math.random();
+            console.log(com_move);
+            if(com_move<0.333){
+                let comp='Paper';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`you won !`;
+            }
+            else if((com_move>=0.333 && com_move<0.666)){
+                let comp='siscors';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`Game Tie !`;
+            }
+            else if((com_move>=0.666 && com_move<=1)){
+                let comp='ROCK';
+                document.getElementById('computer-move').innerHTML=`Computer move is ${comp}`;
+                document.getElementById('result').innerHTML=`You lose !`; 
+            }
+            "><img src="sicisor,jpg.png" alt=""></button>
+
+
+
+
+        </div>
+        <div class="resultant-div">
+            <div id="computer-move">
+
+            </div>
+            <div id="result">
+    
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

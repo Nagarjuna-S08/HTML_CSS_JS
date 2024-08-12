@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ele.css">
+</head>
+<body>
+    <div class="full_page">
+        <div class="heading">
+            <h3>Tamilnadu Electricity Board</h3>
+            <img src="" alt="">
+        </div>
+        <div class="body">
+            <input type="text" placeholder="Enter CName" class="name">
+            <input type="text" placeholder="Enter CNumber" id="number">
+            <input type="text" placeholder="Enter previous reading" id="pre_reading">
+            <input type="text" placeholder="Enter current reading" id="cur_reading">
+            <button type="submit" onclick="
+                let name=document.querySelector('input').value;
+                console.log(name);
+                let cnumber=Number(document.getElementById('number').value);
+                console.log(cnumber);
+                let preading=Number(document.getElementById('pre_reading').value);
+                let creading=Number(document.getElementById('cur_reading').value);
+                console.log(typeof creading);
+                const reading=creading-preading;
+                console.log(reading)
+                let amount;
+                if(reading<200){
+                    amount=1*reading;
+                    console.log(amount);
+                }
+                else if(reading>=200 && reading<400){
+                    amount=4*reading;
+                    console.log(amount);
+                }
+                else{
+                    amount=6*reading;
+                    console.log(amount);
+                }
+                let message=`Hi ${name} your costuemr number is->${cnumber} your usage=${reading} Units and the amount=${amount} rupees`;
+                console.log(typeof message);
+                let result=document.getElementById('dispaly');
+                console.log(result);
+                result.innerHTML=message;
+            ">Submit</button>
+            <div>
+                <h2 id="dispaly"></h2>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
